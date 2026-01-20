@@ -85,9 +85,12 @@ button {
   cursor: pointer;
 }/* About layout */
 .about-container img {
-  width: 300px;
-  border-radius: 20px;
+  width: 360px;
+  height: 360px;
+  border-radius: 24px;
   object-fit: cover;
+}
+
 }
 
 }
