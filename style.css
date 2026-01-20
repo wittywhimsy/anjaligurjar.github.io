@@ -1,83 +1,86 @@
-/* RESET */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
+/* Body */
 body {
-  font-family: "Poppins", Arial, sans-serif;
-  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
   color: #222;
   line-height: 1.6;
+  padding: 40px;
 }
 
-/* PAGE WIDTH */
-section, nav {
-  max-width: 900px;
-  margin: auto;
-  padding: 24px;
-}
-
-/* NAV */
+/* Navigation */
 nav {
-  display: flex;
-  gap: 20px;
-  font-size: 14px;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 nav a {
   text-decoration: none;
-  color: #2563eb;
-}
-
-/* HERO */
-#home h1 {
-  font-size: 48px;
-  font-weight: 600;
-  margin-top: 40px;
-  margin-bottom: 10px;
-}
-
-/* RESUME LINK */
-#home a {
-  color: #2563eb;
-  text-decoration: none;
+  color: #222;
+  margin: 0 15px;
   font-weight: 500;
 }
 
-/* HEADINGS */
-h2 {
-  font-size: 28px;
-  margin-bottom: 12px;
+nav a:hover {
+  opacity: 0.6;
 }
 
-h3 {
-  margin-top: 20px;
-}
-
-/* SECTIONS */
+/* Sections */
 section {
-  margin-top: 60px;
+  max-width: 900px;
+  margin: 0 auto 120px;
 }
 
-/* IMAGE */
-img {
-  width: 160px;
-  border-radius: 50%;
-  margin: 16px 0;
+/* Home */
+#home h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-/* FORM */
-input, textarea {
+#home a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #222;
+  border-bottom: 1px solid #222;
+}
+
+/* About */
+#about img {
+  width: 180px;
+  border-radius: 100px;
+  margin: 30px 0;
+}
+
+#about p {
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+/* Contact */
+input,
+textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+  max-width: 400px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  margin-bottom: 25px;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
 }
 
 button {
-  padding: 8px 16px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #222;
+  padding: 5px 0;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
 }
-
