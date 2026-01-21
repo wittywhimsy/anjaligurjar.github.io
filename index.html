@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anjali Gurjar Portfolio</title>
@@ -15,32 +14,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
- <script>
-  const quotes = [
-    "“A very merry unbirthday to you!” — Lewis Carroll, Alice in Wonderland",
-    "“You must have a cup of tea!” — Lewis Carroll, Alice in Wonderland",
-    "“Curiouser and curiouser!” — Lewis Carroll, Alice in Wonderland"
-  ];
-
-  let index = 0;
-  const quoteElement = document.getElementById("quote");
-
-  setInterval(() => {
-    index = (index + 1) % quotes.length;
-    quoteElement.textContent = quotes[index];
-  }, 6000); // every 6 seconds
-</script>
-
-
 <body>
   <nav>
     <a href="#home">Home</a> |
@@ -48,80 +21,59 @@
     <a href="#contact">Leave A Message!</a>
   </nav>
 
- <section id="home">
+  <section id="home">
+    <h1>🧸 Hello, I’m Anjali Gurjar.</h1>
 
-    <h1>🧸Hello! I'm Anjali Gurjar.</h1>
-   <p class="quote" id="quote">
-    “Curiouser and curiouser!” — Lewis Carroll, Alice in Wonderland
-  </p>
-  <a href="resume.pdf" download>Download Resume</a>
-</section>
+    <p class="quote" id="quote">
+      “Curiouser and curiouser!” — Lewis Carroll, Alice in Wonderland
+    </p>
 
-
-<section id="about">
-  <h2>About Me</h2>
-
-  <div class="about-container">
-    <img src="yourphoto.jpg" alt="Your Photo">
-
-    <div class="about-text">
-      <p class="intro">Operations Manager · Problem Solver · Tech Enthusiast.</p>
-
-      <h3>Skills</h3>
-      <p>Operations Management, Project Coordination, Data Analysis, Team Leadership</p>
-
-      <h3>Education</h3>
-      <p>MA in English Literature — St.Xavier's,Jaipur </p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== ROTATING QUOTES SCRIPT ===== -->
-<script>
-  const quotes = [
-    "“A very merry unbirthday to you!” — Lewis Carroll, Alice in Wonderland",
-    "“You must have a cup of tea!” — Lewis Carroll, Alice in Wonderland",
-    "“Curiouser and curiouser!” — Lewis Carroll, Alice in Wonderland"
-  ];
-
-  let index = 0;
-  const quoteElement = document.getElementById("quote");
-
-  setInterval(() => {
-    index = (index + 1) % quotes.length;
-    quoteElement.textContent = quotes[index];
-  }, 6000); // every 6 seconds
-</script>
-
-</body>
-</html>
-
-
-    <h3>Skills</h3>
-    <p>Your skills here...</p>
-
-    <h3>Education</h3>
-    <p>Your education here...</p>
-  </div>
-</div>
-
-
-    <h3>Skills</h3>
-    <p>Your skills here...</p>
-
-    <h3>Education</h3>
-    <p>Your education here...</p>
+    <a href="resume.pdf" download>Download Resume</a>
   </section>
 
-<section id="contact">
-  <h2>Leave A Message!</h2>
-  <form>
-    <input type="text" placeholder="Name" required><br>
-    <input type="email" placeholder="Email" required><br>
-    <textarea placeholder="Your Message" required></textarea><br>
-    <button type="submit">Send</button>
-  </form>
-</section>
+  <section id="about">
+    <h2>About Me</h2>
 
+    <div class="about-container">
+      <img src="yourphoto.jpg" alt="Your Photo">
+
+      <div class="about-text">
+        <p class="intro">Operations Manager · Problem Solver · Tech Enthusiast.</p>
+
+        <h3>Skills</h3>
+        <p>Operations Management, Project Coordination, Data Analysis, Team Leadership</p>
+
+        <h3>Education</h3>
+        <p>MA in English Literature — St.Xavier's, Jaipur</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Leave A Message!</h2>
+    <form>
+      <input type="text" placeholder="Name" required><br>
+      <input type="email" placeholder="Email" required><br>
+      <textarea placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- ===== ROTATING QUOTES SCRIPT ===== -->
+  <script>
+    const quotes = [
+      "“A very merry unbirthday to you!” — Lewis Carroll, Alice in Wonderland",
+      "“You must have a cup of tea!” — Lewis Carroll, Alice in Wonderland",
+      "“Curiouser and curiouser!” — Lewis Carroll, Alice in Wonderland"
+    ];
+
+    let index = 0;
+    const quoteElement = document.getElementById("quote");
+
+    setInterval(() => {
+      index = (index + 1) % quotes.length;
+      quoteElement.textContent = quotes[index];
+    }, 6000); // every 6 seconds
+  </script>
 </body>
 </html>
