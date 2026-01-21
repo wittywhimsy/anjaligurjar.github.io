@@ -24,6 +24,22 @@
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+ <script>
+  const quotes = [
+    "“A very merry unbirthday to you!” — Lewis Carroll, Alice in Wonderland",
+    "“You must have a cup of tea!” — Lewis Carroll, Alice in Wonderland",
+    "“Curiouser and curiouser!” — Lewis Carroll, Alice in Wonderland"
+  ];
+
+  let index = 0;
+  const quoteElement = document.getElementById("quote");
+
+  setInterval(() => {
+    index = (index + 1) % quotes.length;
+    quoteElement.textContent = quotes[index];
+  }, 6000); // every 6 seconds
+</script>
+
 
 <body>
   <nav>
@@ -35,7 +51,9 @@
  <section id="home">
 
     <h1>🧸Hello! I'm Anjali Gurjar.</h1>
-  </div>
+   <p class="quote" id="quote">
+    “Curiouser and curiouser!” — Lewis Carroll, Alice in Wonderland
+  </p>
   <a href="resume.pdf" download>Download Resume</a>
 </section>
 
